@@ -11,4 +11,10 @@ public class GitTestApplication {
         SpringApplication.run(GitTestApplication.class, args);
     }
 
+    private String translate(final String words) {
+        if (words.equals("Всем привет")) {
+            return "Hello world";
+        }
+        return "Я такого не знаю";
+    }
 }
