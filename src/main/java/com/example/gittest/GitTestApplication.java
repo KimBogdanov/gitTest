@@ -7,11 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GitTestApplication {
 
     public static void main(String[] args) {
-        System.out.println("Всем привет");
+        System.out.println(translate("Всем привет!"));
         SpringApplication.run(GitTestApplication.class, args);
     }
 
-    private String translate(final String words) {
+    private static String translate(final String words) {
         if (words.equals("Всем привет")) {
             return "Hello world";
         }
